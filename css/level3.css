@@ -1,0 +1,55 @@
+.ballon{
+  background-color: purple;
+  width: 60px;
+  height: 60px;
+  border-radius: 50px;
+  margin: 20px;
+}
+
+.redballon{
+  background-color: red;
+  width: 60px;
+  height: 60px;
+  border-radius: 50px;
+  margin: 20px;
+}
+
+.greenballon{
+  background-color: greenyellow;
+  width: 60px;
+  height: 60px;
+  border-radius: 50px;
+  margin: 20px;
+  position: relative;
+  animation: bfirst 5s linear 0s infinite alternate;
+}
+
+@keyframes bfirst {
+  0%   { left:0px; top:0px;}
+  25%  { left:200px; top:200px;}
+  50%  {left:500px; top:200px;}
+  75%  { left:0px; top:200px;}
+  100% { left:0px; top:0px;}
+}
+#gonextlevel{
+  display: none;
+}
+
+.orangeballon {
+  background-color: orange;
+  width: 60px;
+  height: 60px;
+  border-radius: 50px;
+  margin: 20px;
+  animation: mymove 5s infinite;
+  position: relative;
+  animation: myfirst 5s linear 0s infinite alternate;
+}
+
+@keyframes myfirst {
+  0%   { left:0px; top:0px;}
+  25%  { left:200px; top:0px;}
+  50%  {left:200px; top:200px;}
+  75%  { left:0px; top:200px;}
+  100% { left:0px; top:0px;}
+}

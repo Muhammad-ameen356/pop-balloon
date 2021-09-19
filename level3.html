@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Firebase -->
+    <script src="https://www.gstatic.com/firebasejs/9.0.2/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.0.2/firebase-auth-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.0.2/firebase-firestore-compat.js"></script>
+
+    <!-- Bootstrap V.5.0 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/level3.css">
+    <link rel="stylesheet" href="./css/navbar.css">
+    <title>Level 3</title>
+</head>
+
+<body>
+    <div class="nav">
+        <input type="checkbox" id="nav-check">
+        <div class="nav-header">
+            <div class="nav-title">
+            </div>
+        </div>
+
+        <div class="nav-btn">
+            <label for="nav-check">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+        </div>
+
+        <div class="nav-links">
+            <!-- <a href="#">EN</a> -->
+            <a href="#">
+                <i class="bi bi-bar-chart-line"></i>
+                Your Score</a>
+            <a href="" onclick="logout()">
+                <i class="bi bi-person-circle nav-icon"></i>
+                LOGOUT</a>
+        </div>
+    </div>
+    <img src="./image/popers.png" class="img-fluid" style="position: fixed;" width="150px" alt="" srcset="">
+
+    <div class="container">
+        <div class="container text-center">
+            <h1>Level 3</h1>
+        </div>
+        <div class="container text-center">
+            <h1>PooP on <span style="color: orange;">Orange</span> ballon</h1>
+        </div>
+        <div class="container text-center container d-flex justify-content-around text-center pt-3">
+            <h5 id="score">Score: 0</h5>
+            <h5 id="lifecount">Life: 3</h5>
+        </div>
+
+        <div class="container d-flex justify-content-center text-center">
+            <div class="greenballon"></div>
+            <div class="ballon"></div>
+            <div class="greenballon"></div>
+            <div class="ballon"></div>
+            <div class="orangeballon"></div>
+            <div class="ballon"></div>
+            <div class="greenballon"></div>
+        </div>
+        <div class="container d-flex justify-content-center text-center">
+            <div class="ballon"></div>
+            <div class="redballon"></div>
+            <div class="greenballon"></div>
+            <div class="orangeballon"></div>
+            <div class="ballon"></div>
+            <div class="orangeballon"></div>
+            <div class="ballon"></div>
+        </div>
+        <div class="container d-flex justify-content-arround text-center">
+            <div class="ballon"></div>
+            <div class="greenballon"></div>
+            <div class="orangeballon"></div>
+            <div class="greenballon"></div>
+            <div class="ballon"></div>
+            <div class="redballon"></div>
+            <div class="orangeballon"></div>
+
+
+        </div>
+
+        <a href="./level4.html"><button class="btn btn-secondary" style="display: none;" id="gonextleve3">Level 3</button></a>
+
+    </div>
+
+
+
+    <script src="./js/auth.js"></script>
+    <script src="./js/level3.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+        integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+        integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
