@@ -71,7 +71,7 @@ const signupWithGoogle = () => {
         .then((result) => {
             var user = result.user;
             setGoogleSignupData(user);
-            // window.location.href = "./level1.html";
+            window.location.href = "./level1.html";
         }).catch((error) => {
             var errorMessage = error.message;
             console.log(errorMessage);
